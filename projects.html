@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>My website</title>
+        <link rel="stylesheet" type="text/css" href="css/css.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    </head>
+
+    <body class = "projects">
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="family.html">Family</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id = "raspberry">
+
+            <article>
+
+                <div id = "video-container">
+                    <video id = "video" height="500" loop muted autoplay poster="videos/poster.jpg">
+                        <source src="videos/raspberry.mp4" type="video/mp4" />
+                        <source src="videos/raspberry.webm" type="video/webm" />
+                        <source src="videos/raspberry.ogv" type="video/ogg" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div id = "video-comments">
+                    <h1>Raspberry Pi-powered color clock</h1>
+                    <h2>#JustUnicornThings</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisi leo, euismod laoreet tortor non, pellentesque placerat est. Nullam auctor sodales mi a mollis. Cras viverra euismod auctor. Maecenas ultricies libero non arcu porta imperdiet. In magna augue, blandit a quam in, malesuada dictum tellus. Nam lorem mi, sodales vitae massa fringilla, dictum ultricies nisl. Etiam fermentum tellus at tincidunt auctor. Ut non congue nulla, quis scelerisque lacus.</p>
+                    <p>This project was inspired by <a href="http://thecolourclock.co.uk/" target="_blank">The Color Clock</a></p>
+                </div>
+                
+            </article>
+        </div>
+	<!-- the below script was taken from: http://stackoverflow.com/questions/1711078/html5-video-element-on-android -->
+        <script>
+            var video = document.getElementById('video');
+            video.addEventListener('click',function(){video.play();},false);
+        </script>
+    </body>
+    
+</html>

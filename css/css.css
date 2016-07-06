@@ -1,0 +1,278 @@
+/* General site styling */
+
+html, body, div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    	min-height: 100%; /*This line was added so that the backgrounds fits on smartphone, cf http://stackoverflow.com/questions/13659204/background-size-cover-does-not-cover-mobile-screen */
+}
+
+p a {
+    color: inherit;
+    font-family: inherit;
+}
+
+body.home {
+    background: url('../images/header2.jpg') center center fixed no-repeat;
+    background-size: cover;
+}
+
+body.resume {
+    background: url('../images/dingle.JPG') center center fixed no-repeat;
+    background-size: cover;
+}
+
+body.contact {
+    background: url('../images/achill.JPG') center center fixed no-repeat;
+    background-size: cover;    
+}
+
+body.family, body.projects {
+    background-color: black;
+}
+
+/* navigation bar -- adapted from http://www.w3schools.com/css/css_navbar.asp */
+
+nav ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.5);
+    display: table;
+    z-index: 1;
+}
+
+nav li {
+    display: table-cell;
+}
+
+nav li a {
+    font-family: 'Alegreya Sans SC';
+    font-size: 18px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+/* resume page styling */
+
+body.resume div {
+    margin-top: 75px;
+    font-family: "Open Sans"
+}
+
+div.resume-intro {
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 15px;
+    width: 70%;
+    height: auto;
+    margin: 1em auto;
+    padding: 10px;
+    position: relative;
+    text-align: justify;
+}
+
+div.resume-intro h1 {
+    text-align: center;
+    color:black;
+    border-bottom: 2px solid grey;
+    font-family: "Grand Hotel";
+    font-size: 36px;
+    font-family: "Grand Hotel";
+    font-weight: 100;
+}
+
+div.resume-content {
+    color: white;
+    border-radius: 15px;
+    width: 70%;
+    height: auto;
+    margin: 1em auto;
+    padding: 10px;
+    position: relative;
+    text-align: justify;
+}
+
+div.resume-content h1 {
+    text-align: center;
+    border-bottom: 2px solid lightgrey;
+    font-size: 36px;
+    font-family: "Grand Hotel";
+    font-weight: 100;
+}
+
+div.resume-content table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.resume-content table td {
+    table-layout: fixed;
+    width: 23px;
+    border-radius: 50px;
+}
+
+.white {
+    background-color: white; /* This colors the selected cells in white */
+}
+
+/* projects page styling */
+
+#raspberry {
+    margin-top: 75px;
+    height: 500px;
+    text-align: center;
+}
+
+#video-container {
+    display: inline-block;
+    height: 500px;
+    margin-right: 1em;
+    vertical-align: top;
+}
+
+#video-comments {
+    color:white;
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    text-align: justify;
+    vertical-align: top;
+    font-family: "Open Sans";
+}
+
+#video-comments h1 {
+    font-family: "Lobster";
+    font-size: 32px;
+    margin:0;
+}
+
+#video-comments h2 {
+    color: deeppink;
+}
+
+/* Family page styling */
+
+#Gallery {
+    color: white;
+    text-align: center;
+    margin-top: 75px;
+    font-family: "Open Sans";
+    font-size: 8px;
+    margin-bottom: 75px;
+}
+
+#Gallery h1 strong {
+    font-size: 56px;
+    font-family: 'Petit Formal Script', serif;
+    font-weight: 600;
+    text-shadow: 0px 0px 5px #d0d0d0;
+}
+
+div.family_pictures {
+    margin: 1em;
+    width: 400px;
+    display: inline-block;
+    position: relative;
+}
+
+div.family_pictures img {
+    max-width: 100%;
+    height: auto;
+    width:100%;   
+}
+
+/* achieved the overlay look thanks to: http://stackoverflow.com/questions/21371594/display-div-or-span-over-image-on-hover */
+.overlay {
+    display: none;
+    font-size: 36px;
+    font-family: "Pacifico";
+    font-weight: 100;
+}
+
+.family_pictures:hover .overlay {
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    position:absolute;
+    top:0;
+    left:0;
+    display:inline-block;
+    box-sizing:border-box;
+}
+
+/* contact age styling -- adapted from http://www.w3schools.com/html/html_forms.asp */
+
+body.contact div {
+    position: relative;
+    margin-top: 75px;
+    width: 100%;
+    height: 100%;
+}
+
+body.contact div form {
+    width: 50%;
+    margin: 0 auto;
+    vertical-align: middle;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.6);
+    font-size: 16px;
+    font-family: "Oxygen Mono";
+}
+
+input[type=submit] {
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Open Sans";
+    font-size: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+#message-box {
+    height: 200px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0; 
+    border: none;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background-color: rgba(255,255,255,0.6);
+    font-size: 16px;
+    font-family: "Oxygen Mono";
+}
